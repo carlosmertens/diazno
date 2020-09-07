@@ -6,6 +6,7 @@ const Dates = () => {
     <PageLayout>
       <main className={styles.main}>
         <h1 className={styles.title}>Dates</h1>
+        <img src='/img/diazno.jpg' alt='Diazno' />
       </main>
     </PageLayout>
   );

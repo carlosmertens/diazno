@@ -6,6 +6,7 @@ export default function Home() {
     <PageLayout>
       <main className={styles.main}>
         <h1 className={styles.title}>Home</h1>
+        <img src='/img/diazno1.jpg' alt='Diazno' />
       </main>
     </PageLayout>
   );
