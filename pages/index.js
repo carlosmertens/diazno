@@ -2,6 +2,7 @@ import PageLayout from '../components/PageLayout';
 import Description from '../components/Description';
 import UpcomingDates from '../components/UpcomingDates';
 import PreviousDates from '../components/PreviousDates';
+import ShareSocial from '../components/ShareSocial';
 
 export default function Home() {
   return (
@@ -22,11 +23,7 @@ export default function Home() {
 
         <PreviousDates />
 
-        <div className='share-social'>
-          <p>SHARE THIS:</p>
-          <button>Twitter</button>
-          <button>Facebook</button>
-        </div>
+        <ShareSocial />
       </main>
     </PageLayout>
   );
