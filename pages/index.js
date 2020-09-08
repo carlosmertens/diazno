@@ -3,15 +3,15 @@ import Description from '../components/Description';
 import UpcomingDates from '../components/UpcomingDates';
 import PreviousDates from '../components/PreviousDates';
 import ShareSocial from '../components/ShareSocial';
+import Carousel from '../components/Carousel';
 
 export default function Home() {
   return (
     <PageLayout>
       <main>
         <h1>Home</h1>
-        <div className='carousel'>
-          <img src='/img/diazno3.jpg' alt='Diazno' />
-        </div>
+
+        <Carousel />
 
         <Description />
 
