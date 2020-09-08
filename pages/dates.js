@@ -1,12 +1,20 @@
-// import styles from '../styles/Home.module.css';
 import PageLayout from '../components/PageLayout';
+import UpcomingDates from '../components/UpcomingDates';
+import PreviousDates from '../components/PreviousDates';
 
 const Dates = () => {
   return (
     <PageLayout>
-      <main className='{styles.main}'>
-        <h1 className='{styles.title}'>Dates</h1>
-        <img src='/img/diazno.jpg' alt='Diazno' />
+      <main>
+        <h1>Dates</h1>
+
+        <div className='front-image'>
+          <img src='/img/diazno.jpg' alt='Diazno' />
+        </div>
+
+        <UpcomingDates />
+
+        <PreviousDates />
       </main>
     </PageLayout>
   );
