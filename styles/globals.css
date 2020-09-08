@@ -1,11 +1,26 @@
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, roboto, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Cantarell, Helvetica Neue, sans-serif;
   background-color: #000000;
   color: #d3d3d3;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 a {
@@ -13,6 +28,14 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+nav a {
+  margin: 0 20px 0 20px;
 }

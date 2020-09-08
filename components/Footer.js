@@ -1,8 +1,8 @@
-import styles from '../styles/Home.module.css';
+// import styles from '../styles/Home.module.css';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className='{styles.footer}'>
       {/* TODO: Create an icon component */}
       <a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>
         Facebook

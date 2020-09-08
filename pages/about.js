@@ -1,13 +1,13 @@
-import styles from '../styles/Home.module.css';
+// import styles from '../styles/Home.module.css';
 import PageLayout from '../components/PageLayout';
 
 const About = () => {
   return (
     <PageLayout>
-      <main className={styles.main}>
-        <h1 className={styles.title}>About</h1>
+      <main className='{styles.main}'>
+        <h1 className='{styles.title}'>About</h1>
         <img src='/img/diazno2.jpg' alt='Diazno' />
-        <div className={styles.description}>
+        <div className='{styles.description}'>
           <p>
             Born and raised in the city of Lagos, which is famous for gifting the world
             the musical genius of Fela Kuti, Diazno would come to discover his love for
