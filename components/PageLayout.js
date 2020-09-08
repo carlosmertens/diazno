@@ -11,7 +11,7 @@ const PageLayout = ({ children }) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
-      {children}
+      <div>{children}</div>
       <Footer />
     </div>
   );
