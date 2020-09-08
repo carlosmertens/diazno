@@ -15,7 +15,7 @@ export default function Home() {
 
         <Description />
 
-        <div className='front-image'>
+        <div style={imageStyle}>
           <img src='/img/diazno.jpg' alt='Diazno' />
         </div>
 
@@ -28,3 +28,7 @@ export default function Home() {
     </PageLayout>
   );
 }
+
+const imageStyle = {
+  textAlign: 'center',
+};

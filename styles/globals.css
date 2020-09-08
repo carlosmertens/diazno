@@ -29,20 +29,6 @@ a {
   text-decoration: none;
 }
 
-.carousel {
-  text-align: center;
-}
-
-.front-image {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.7;
-  font-size: 1rem;
-  text-align: justify;
-}
-
 nav {
   position: sticky;
   top: 0;
