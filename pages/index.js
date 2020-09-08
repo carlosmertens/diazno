@@ -1,5 +1,7 @@
 import PageLayout from '../components/PageLayout';
 import Description from '../components/Description';
+import UpcomingDates from '../components/UpcomingDates';
+import PreviousDates from '../components/PreviousDates';
 
 export default function Home() {
   return (
@@ -16,15 +18,9 @@ export default function Home() {
           <img src='/img/diazno.jpg' alt='Diazno' />
         </div>
 
-        <div className='upcoming-dates'>
-          <h2>Upcoming Dates</h2>
-          {/* TODO: Fetch data and populate a list */}
-        </div>
+        <UpcomingDates />
 
-        <div className='previous-dates'>
-          <h2>Previous dates</h2>
-          {/* TODO: Fetch data and populate a list */}
-        </div>
+        <PreviousDates />
 
         <div className='share-social'>
           <p>SHARE THIS:</p>
