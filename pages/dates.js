@@ -1,6 +1,7 @@
 import PageLayout from '../components/PageLayout';
 import UpcomingDates from '../components/UpcomingDates';
 import PreviousDates from '../components/PreviousDates';
+import LeaveMessage from '../components/LeaveMessage';
 
 const Dates = () => {
   return (
@@ -15,6 +16,8 @@ const Dates = () => {
         <UpcomingDates />
 
         <PreviousDates />
+
+        <LeaveMessage />
       </main>
     </PageLayout>
   );

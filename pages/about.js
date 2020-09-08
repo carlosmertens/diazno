@@ -1,6 +1,7 @@
 import PageLayout from '../components/PageLayout';
 import Description from '../components/Description';
 import ShareSocial from '../components/ShareSocial';
+import LeaveMessage from '../components/LeaveMessage';
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
         <img src='/img/diazno2.jpg' alt='Diazno' />
         <Description />
         <ShareSocial />
+        <LeaveMessage />
       </main>
     </PageLayout>
   );
