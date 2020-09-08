@@ -4,6 +4,7 @@ import UpcomingDates from '../components/UpcomingDates';
 import PreviousDates from '../components/PreviousDates';
 import ShareSocial from '../components/ShareSocial';
 import Carousel from '../components/Carousel';
+import PhotoDates from '../components/PhotoDates';
 
 export default function Home() {
   return (
@@ -15,9 +16,7 @@ export default function Home() {
 
         <Description />
 
-        <div style={imageStyle}>
-          <img src='/img/diazno.jpg' alt='Diazno' />
-        </div>
+        <PhotoDates />
 
         <UpcomingDates />
 
@@ -28,7 +27,3 @@ export default function Home() {
     </PageLayout>
   );
 }
-
-const imageStyle = {
-  textAlign: 'center',
-};
