@@ -16,32 +16,35 @@ const DatesPage = ({ dates }) => {
     <PageLayout>
       <PageHeader>Dates</PageHeader>
       <ContentContainer>
-        <div className='flex justify-center items-center'>
-          <div className='self-start'>
+        <div className='flex justify-center'>
+          <div>
             <PhotoDates />
           </div>
-          <div className='px-8 grid gap-6'>
-            <input
-              onChange={(e) => setSearch(e.target.value)}
-              type='text'
-              placeholder='Find event...'
-            />
-            <Dates
-              title='Upcoming Dates'
-              events={dates.filter(
-                (d) =>
-                  new Date(d.Date).getTime() > today &&
-                  d.Event.toLowerCase().includes(search.toLowerCase())
-              )}
-            />
-            <Dates
-              title='Previous Dates'
-              events={dates.filter(
-                (d) =>
-                  new Date(d.Date).getTime() < today &&
-                  d.Event.toLowerCase().includes(search.toLowerCase())
-              )}
-            />
+          <div>
+            <div className='px-8 grid gap-6'>
+              <input
+                onChange={(e) => setSearch(e.target.value)}
+                type='text'
+                placeholder='Find event...'
+                className='w-full'
+              />
+              <Dates
+                title='Upcoming Dates'
+                events={dates.filter(
+                  (d) =>
+                    new Date(d.Date).getTime() > today &&
+                    d.Event.toLowerCase().includes(search.toLowerCase())
+                )}
+              />
+              <Dates
+                title='Previous Dates'
+                events={dates.filter(
+                  (d) =>
+                    new Date(d.Date).getTime() < today &&
+                    d.Event.toLowerCase().includes(search.toLowerCase())
+                )}
+              />
+            </div>
           </div>
         </div>
       </ContentContainer>
