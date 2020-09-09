@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import fetch from 'isomorphic-fetch';
 
 import PageLayout from '../components/PageLayout';
@@ -10,22 +10,37 @@ import { PageHeader } from '../components/PageHeader';
 const today = new Date().getTime();
 
 const DatesPage = ({ dates }) => {
+  const [search, setSearch] = useState('');
+
   return (
     <PageLayout>
       <PageHeader>Dates</PageHeader>
       <ContentContainer>
         <div className='flex justify-center items-center'>
-          <div>
+          <div className='self-start'>
             <PhotoDates />
           </div>
           <div className='px-8 grid gap-6'>
+            <input
+              onChange={(e) => setSearch(e.target.value)}
+              type='text'
+              placeholder='Find event...'
+            />
             <Dates
               title='Upcoming Dates'
-              events={dates.filter((d) => new Date(d.Date).getTime() > today)}
+              events={dates.filter(
+                (d) =>
+                  new Date(d.Date).getTime() > today &&
+                  d.Event.toLowerCase().includes(search.toLowerCase())
+              )}
             />
             <Dates
               title='Previous Dates'
-              events={dates.filter((d) => new Date(d.Date).getTime() < today)}
+              events={dates.filter(
+                (d) =>
+                  new Date(d.Date).getTime() < today &&
+                  d.Event.toLowerCase().includes(search.toLowerCase())
+              )}
             />
           </div>
         </div>
