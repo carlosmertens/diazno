@@ -1,26 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
-// import styles from '../styles/Home.module.css';
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
-    <nav>
+    <nav className='text-center text-xs flex items-center justify-center'>
       <Link href='/'>
-        <a>HOME</a>
+        <a className='px-2 md:px-4'>HOME</a>
       </Link>
       <Link href='/about'>
-        <a>ABOUT</a>
+        <a className='px-2 md:px-4'>ABOUT</a>
       </Link>
       <Link href='/dates'>
-        <a>DATES</a>
+        <a className='px-2 md:px-4'>DATES</a>
       </Link>
       <Link href='/gallery'>
-        <a>GALLERY</a>
+        <a className='px-2 md:px-4'>GALLERY</a>
       </Link>
       <Link href='/contact'>
-        <a>CONTACT</a>
+        <a className='px-2 md:px-4'>CONTACT</a>
       </Link>
     </nav>
   );
 };
-export default Navbar;
