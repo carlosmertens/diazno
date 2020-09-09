@@ -1,17 +1,19 @@
 import Head from 'next/head';
-import Navbar from './Navbar';
+
+import { Navbar } from './Navbar';
 import Footer from './Footer';
-// import styles from '../styles/Home.module.css';
+import ShareSocial from './ShareSocial';
 
 const PageLayout = ({ children }) => {
   return (
-    <div className='{styles.container}'>
+    <div className='bg-black text-gray-600 grid grid-rows-basic-page text-center gap-2'>
       <Head>
         <title>Diazno</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <ShareSocial />
       <Navbar />
-      <div>{children}</div>
+      <>{children}</>
       <Footer />
     </div>
   );

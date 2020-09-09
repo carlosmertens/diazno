@@ -1,6 +1,6 @@
 const Description = () => {
   return (
-    <div style={textStyle}>
+    <>
       <p>
         Born and raised in the city of Lagos, which is famous for gifting the world the
         musical genius of Fela Kuti, Diazno would come to discover his love for music
@@ -23,14 +23,8 @@ const Description = () => {
         John Legend. An artist not afraid of boundaries, Diazno’s music is a daring mix
         of afro-influenced Pop/Rock with a hint of soul and reggae.
       </p>
-    </div>
+    </>
   );
 };
 
 export default Description;
-
-const textStyle = {
-  lineHeight: '1.7',
-  fontSize: '1rem',
-  textAlign: 'justify',
-};
