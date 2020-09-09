@@ -1,18 +1,16 @@
 import PageLayout from '../components/PageLayout';
 import Description from '../components/Description';
-import ShareSocial from '../components/ShareSocial';
-import LeaveMessage from '../components/LeaveMessage';
+import { ContentContainer } from '../components/ContentContainer';
+import { PageHeader } from '../components/PageHeader';
 
 const About = () => {
   return (
     <PageLayout>
-      <main>
-        <h1>About</h1>
-        <img src='/img/diazno2.jpg' alt='Diazno' />
+      <PageHeader>About</PageHeader>
+      <ContentContainer>
+        <img src='/img/diazno2.jpg' className='mx-auto' alt='Diazno' />
         <Description />
-        <ShareSocial />
-        <LeaveMessage />
-      </main>
+      </ContentContainer>
     </PageLayout>
   );
 };
