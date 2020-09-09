@@ -16,9 +16,9 @@ export const Navbar = () => {
       <Link href='/gallery'>
         <a className='px-2 md:px-4'>GALLERY</a>
       </Link>
-      <Link href='/contact'>
-        <a className='px-2 md:px-4'>CONTACT</a>
-      </Link>
+      <a href='mailto:contact@diazno.com' className='px-2 md:px-4'>
+        CONTACT
+      </a>
     </nav>
   );
 };
