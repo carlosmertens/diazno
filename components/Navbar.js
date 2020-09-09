@@ -16,7 +16,7 @@ export const Navbar = () => {
       <Link href='/gallery'>
         <a className='px-2 md:px-4'>GALLERY</a>
       </Link>
-      <a href='mailto:contact@diazno.com' className='px-2 md:px-4'>
+      <a href='mailto:booking.diazno@gmail.com' className='px-2 md:px-4'>
         CONTACT
       </a>
     </nav>
