@@ -1,7 +1,7 @@
 const PhotoDates = () => {
   return (
     <div style={imageStyle}>
-      <img src='/img/diazno.jpg' alt='Diazno' />
+      <img width={200} src='/img/diazno.jpg' alt='Diazno' />
     </div>
   );
 };
