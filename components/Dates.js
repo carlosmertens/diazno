@@ -10,7 +10,7 @@ export const Dates = ({ title, events }) => {
           <ul className='text-left' key={index}>
             <li>
               <a target='_blank' rel='noreferrer noopener' href={event.Link}>
-                {format(new Date(event.Date), 'dd MMM, yyyy')} - {event.Event}
+                * {format(new Date(event.Date), 'dd MMM, yyyy')} - {event.Event}
               </a>
             </li>
           </ul>
