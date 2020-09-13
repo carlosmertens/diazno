@@ -1,4 +1,9 @@
-import { FaSpotify, FaFacebookSquare, FaYoutube, FaInstagram } from 'react-icons/fa';
+import {
+  FaSpotify,
+  FaFacebookSquare,
+  FaYoutube,
+  FaInstagram,
+} from 'react-icons/fa';
 
 const ShareSocial = ({ transparent }) => {
   return (
@@ -6,18 +11,34 @@ const ShareSocial = ({ transparent }) => {
       className={`share-social text-xl ${
         transparent ? '' : 'bg-gray-600'
       } text-white flex items-center justify-center`}>
-      <button className='px-2'>
+      <a
+        target='_blank'
+        rel='noreferrer noopener'
+        href='https://www.facebook.com/officialdiazno'
+        className='px-2'>
         <FaFacebookSquare />
-      </button>
-      <button className='px-2'>
+      </a>
+      <a
+        target='_blank'
+        rel='noreferrer noopener'
+        href='https://www.youtube.com/channel/UCuAuh0pongpsiMQGxwLcTxQ'
+        className='px-2'>
         <FaYoutube />
-      </button>
-      <button className='px-2'>
+      </a>
+      <a
+        target='_blank'
+        rel='noreferrer noopener'
+        href='https://www.instagram.com/diazno/'
+        className='px-2'>
         <FaInstagram />
-      </button>
-      <button className='px-2'>
+      </a>
+      <a
+        target='_blank'
+        rel='noreferrer noopener'
+        href='https://open.spotify.com/artist/4UobcfdsvVwgXka22f9I7d?si=PXsGbhijT3qVRajiC6jVvw'
+        className='px-2'>
         <FaSpotify />
-      </button>
+      </a>
     </div>
   );
 };

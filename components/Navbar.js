@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const Navbar = () => {
   return (
-    <nav className='text-center text-xs flex items-center justify-center'>
+    <nav className='bg-black sticky top-0 z-50 text-center text-xs flex items-center justify-center'>
       <Link href='/'>
         <a className='px-2 md:px-4'>HOME</a>
       </Link>
