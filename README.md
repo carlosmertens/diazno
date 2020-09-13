@@ -8,6 +8,10 @@ Website created in collaboration with the great Tejas Kumar
 
 Website for musician Diazno. An artist not afraid of boundaries, Diazno’s music is a daring mix of afro-influenced Pop/Rock with a hint of soul and reggae.
 
+## Published
+
+[`Diazno Website`](https://diazno.netlify.app/)
+
 ## Author
 
 - **Tejas Kumar** - _Software Engineer_
