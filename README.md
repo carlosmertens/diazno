@@ -1,5 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Diazno
+
+Website created in collaboration with the great Tejas Kumar
+
+## Description
+
+Website for musician Diazno. An artist not afraid of boundaries, Diazno’s music is a daring mix of afro-influenced Pop/Rock with a hint of soul and reggae.
+
+## Author
+
+- **Tejas Kumar** - _Software Engineer_
+- **Carlos Mertens** - _Mertens-Applications_
+
 ## Getting Started
 
 First, run the development server:
